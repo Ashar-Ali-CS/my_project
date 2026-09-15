@@ -1,6 +1,6 @@
 
 # tiny command line app 
-# example program (sparta global) for git workflow excerise
+# example program (sparta global) for git workflow excerisego
 
 #caps list 
 MAX_TASKS = 10
@@ -14,3 +14,10 @@ def add_tasks(tasks,description):
       tasks.append({"description": description,"done": False})
       return True
 
+
+def complete_task(tasks,index):
+      """Mark task as done ,but position in the list ."""
+      if index < 0 or index >= len(tasks):
+            return False
+      tasks[index] ["done"] = True
+      return True
