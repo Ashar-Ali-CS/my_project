@@ -35,3 +35,17 @@ def list_tasks(tasks):
     """Display all tasks."""
     for task in tasks:
      print(task)
+
+
+def main():
+    """Main run it and test all tasks  """
+    tasks=[]
+    add_tasks(tasks, "do git walkthrough")
+    add_tasks(tasks, "Review pull request")
+    add_tasks(tasks, "Merge to main")
+    complete_task(tasks,0)
+    print("Current tasks: ")
+    list_tasks(tasks)
+
+if __name__ == "__main__":
+     main()
