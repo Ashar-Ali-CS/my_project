@@ -29,4 +29,9 @@ def remove_task(tasks,index):
          return False
     tasks.pop(index)
     return True
-    
+
+
+def list_tasks(tasks):
+    """Display all tasks."""
+    for task in tasks:
+     print(task)
